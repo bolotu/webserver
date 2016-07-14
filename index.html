@@ -13,7 +13,7 @@
     <meta content="邀请开课" name="Keywords">
     <meta content="开课" name="Keywords">
     <meta content="众筹开课" name="Keywords">
-    <meta content="更快，更准，更近的知识学习平台" name="description">
+    <meta content="更快，更准，更近的知识社交网络" name="description">
     <meta content="北京伯乐图科技有限公司" name="copyright">
     <meta content="北京伯乐图科技有限公司" name="application-name">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/0175e4240e/UntitledProject/style.css">
@@ -56,11 +56,21 @@
         content: "\eac0";
     }
     
-    button {
+    .downloadBtn {
         border: #2CC72C;
         background: #2CC72C;
         color: #fff;
         border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+        width: auto;
+        padding: 5px 30px;
+    }
+    
+    .codeYes {
+        border: #ccc;
+        background: #ffffff;
+        border-radius: 1px;
         outline: none;
         cursor: pointer;
         width: auto;
@@ -98,7 +108,7 @@
 
 <body>
     <h1>伯乐图</h1>
-    <span>更快，更准，更近的知识学习平台</span>
+    <span>更快，更准，更近的知识社交网络</span>
     <br>
     <p id="getCode"><a href="mailto:caihanyong@bolotu.com">获取邀请码</a></p>
     <br>
@@ -106,12 +116,12 @@
     <br>
     <p id="code_dom">
         <input type="text" placeholder="请输入邀请码" id="code">
-        <button onclick="code()">确定</button>
+        <button class="codeYes" onclick="code()">确定</button>
         <br>
     </p>
     <p id="download">
         <a href="http://bolotu.oss-cn-qingdao.aliyuncs.com/android-release-unsigned.apk?Expires=1468223800&OSSAccessKeyId=xhY7wn3nuLuU4iLp&Signature=a4eE/fSwpF7X81pkHQw0I/3k4FQ%3D">
-            <button class=""><span class="icon-android">
+            <button class="downloadBtn"><span class="icon-android">
     </span>安卓版下载 <i>Beta</i></button>
         </a>
     </p>
