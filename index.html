@@ -2,156 +2,311 @@
 <html lang="zh">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="伯乐图" name="Keywords">
-    <meta content="悬赏提问" name="Keywords">
-    <meta content="邀请开课" name="Keywords">
-    <meta content="开课" name="Keywords">
-    <meta content="众筹开课" name="Keywords">
-    <meta content="更快，更准，更近的知识社交网络" name="description">
-    <meta content="北京伯乐图科技有限公司" name="copyright">
-    <meta content="北京伯乐图科技有限公司" name="application-name">
-    <meta property="wb:webmaster" content="0239eb70e9978f44" />
-    <title>伯乐图，更快更准更近的知识社交网络</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/0175e4240e/UntitledProject/style.css">
-    <style type="text/css">
-    body {
-        text-align: center;
-        margin-top: 15%;
-        background: #343F4A;
-        color: #fff;
-    }
-    
-    @font-face {
-        font-family: 'icomoon';
-        src: url('fonts/icomoon.eot?y9i6od');
-        src: url('fonts/icomoon.eot?y9i6od#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?y9i6od') format('truetype'), url('fonts/icomoon.woff?y9i6od') format('woff'), url('fonts/icomoon.svg?y9i6od#icomoon') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    [class^="icon-"],
-    [class*=" icon-"] {
-        /* use !important to prevent issues with browser extensions that change fonts */
-        font-family: 'icomoon' !important;
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        /* Better Font Rendering =========== */
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    
-    .icon-appleinc:before {
-        content: "\eabe";
-    }
-    
-    .icon-android:before {
-        content: "\eac0";
-    }
-    
-    .downloadBtn {
-        border: #2CC72C;
-        background: #2CC72C;
-        color: #fff;
-        border-radius: 3px;
-        outline: none;
-        cursor: pointer;
-        width: auto;
-        padding: 5px 30px;
-    }
-    
-    .codeYes {
-        border: #ccc;
-        background: #ffffff;
-        border-radius: 1px;
-        outline: none;
-        cursor: pointer;
-        width: auto;
-        padding: 5px 30px;
-    }
-    
-    input#code {
-        border: 0;
-        padding: 5px;
-        background: transparent;
-        border-bottom: 1px solid #ccc;
-        outline: none;
-        color: #fff;
-    }
-    
-    i {
-        display: block;
-    }
-    
-    #download {
-        display: none;
-    }
-    
-    h1 {
-        font-size: 50px;
-    }
-    
-    a {
-        color: #fff;
-        text-decoration: initial;
-        font-size: 12px;
-    }
-    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="伯乐图" name="Keywords">
+  <meta content="邀请开课" name="Keywords">
+  <meta content="众筹邀请" name="Keywords">
+  <meta content="开课" name="Keywords">
+  <meta content="众筹开课" name="Keywords">
+  <meta content="面向职场和大学生专业技能的共享平台" name="description">
+  <meta content="北京伯乐图科技有限公司" name="copyright">
+  <meta content="北京伯乐图科技有限公司" name="application-name">
+  <title>伯乐图，更快更准更近的知识社交网络</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/0175e4240e/UntitledProject/style.css">
+  <style type="text/css">
+  body {
+    text-align: center;
+    background: #343F4A;
+    color: #fff;
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+  }
+  
+  @font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?y9i6od');
+    src: url('fonts/icomoon.eot?y9i6od#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?y9i6od') format('truetype'), url('fonts/icomoon.woff?y9i6od') format('woff'), url('fonts/icomoon.svg?y9i6od#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"],
+  [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-appleinc:before {
+    content: "\eabe";
+  }
+  
+  .icon-android:before {
+    content: "\eac0";
+  }
+  
+  .downloadBtn {
+    border: #2CC72C;
+    background: #2CC72C;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    width: auto;
+    padding: 5px 30px;
+  }
+  
+  .codeYes {
+    border: #ccc;
+    background: #ffffff;
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+    width: auto;
+    padding: 5px 30px;
+  }
+  
+  input#code {
+    border: 0;
+    padding: 5px;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    color: #fff;
+  }
+  
+  i {
+    display: block;
+  }
+  
+  #download {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: initial;
+    font-size: 12px;
+  }
+  /* ---- reset ---- */
+  
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background-color: #b61924;*/
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  /* ---- stats.js ---- */
+  
+  .count-particles {
+    position: absolute;
+    width: 100%;
+    font-size: .8em;
+    text-indent: 4px;
+    line-height: 14px;
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
+  </style>
 </head>
 
 <body>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+  <!-- stats - count particles -->
+  <div class="count-particles">
     <h1>伯乐图</h1>
-    <span>更快，更准，更近的知识社交网络</span>
+    <span>面向职场和大学生专业技能共享的社交平台</span>
     <br>
     <p id="getCode"><a href="mailto:caihanyong@bolotu.com">获取邀请码</a></p>
     <br>
     <br>
     <br>
     <p id="code_dom">
-        <input type="text" placeholder="请输入邀请码" id="code">
-        <button class="codeYes" onclick="code()">确定</button>
-        <br>
+      <input type="text" placeholder="请输入邀请码" id="code">
+      <button class="codeYes" onclick="code()">确定</button>
+      <br>
     </p>
     <p id="download">
-        <a href="http://bolotu.oss-cn-qingdao.aliyuncs.com/android-release-unsigned.apk?Expires=1468223800&OSSAccessKeyId=xhY7wn3nuLuU4iLp&Signature=a4eE/fSwpF7X81pkHQw0I/3k4FQ%3D">
-            <button class="downloadBtn"><span class="icon-android">
+      <a href="http://bolotu.oss-cn-qingdao.aliyuncs.com/android-release-unsigned.apk?Expires=1468223800&OSSAccessKeyId=xhY7wn3nuLuU4iLp&Signature=a4eE/fSwpF7X81pkHQw0I/3k4FQ%3D">
+        <button class="downloadBtn"><span class="icon-android">
     </span>安卓版下载 <i>Beta</i></button>
-        </a>
+      </a>
     </p>
-    <script type="text/javascript">
-    function code() {
-        var code = document.getElementById('code').value;
-        if (code === "db73a55ac68a1037") {
-            document.getElementById('code_dom').style.display = 'none';
-            document.getElementById('getCode').style.display = 'none';
-            document.getElementById('download').style.display = 'block';
-        } else {
-            alert("请输入正确的邀请码!")
-        }
+  </div>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script type="text/javascript">
+  function code() {
+    var code = document.getElementById('code').value;
+    if (code === "db73a55ac68a1037") {
+      document.getElementById('code_dom').style.display = 'none';
+      document.getElementById('getCode').style.display = 'none';
+      document.getElementById('download').style.display = 'block';
+    } else {
+      alert("请输入正确的邀请码!")
     }
-    </script>
-    </script>
-    <script type='text/javascript'>
-    (function(m, ei, q, i, a, j, s) {
-        m[a] = m[a] || function() {
-            (m[a].a = m[a].a || []).push(arguments)
-        };
-        j = ei.createElement(q),
-            s = ei.getElementsByTagName(q)[0];
-        j.async = true;
-        j.charset = 'UTF-8';
-        j.src = i + '?v=' + new Date().getUTCDate();
-        s.parentNode.insertBefore(j, s);
-    })(window, document, 'script', '//static.meiqia.com/dist/meiqia.js', '_MEIQIA');
-    _MEIQIA('entId', 23998);
-    </script>
+  }
+  /* ---- particles.js config ---- */
+
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 10,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": false,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 140,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+  </script>
+  <script type='text/javascript'>
+  (function(m, ei, q, i, a, j, s) {
+    m[a] = m[a] || function() {
+      (m[a].a = m[a].a || []).push(arguments)
+    };
+    j = ei.createElement(q),
+      s = ei.getElementsByTagName(q)[0];
+    j.async = true;
+    j.charset = 'UTF-8';
+    j.src = i + '?v=' + new Date().getUTCDate();
+    s.parentNode.insertBefore(j, s);
+  })(window, document, 'script', '//static.meiqia.com/dist/meiqia.js', '_MEIQIA');
+  _MEIQIA('entId', 23998);
+  </script>
 </body>
 
 </html>
