@@ -20,7 +20,7 @@
   body {
     text-align: center;
     background: #fff;
-    color: #fff;
+    color: #1EC279;
     margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
   }
@@ -131,7 +131,7 @@
     line-height: 14px;
     margin: 0 auto;
     text-align: center;
-    top: 50%;
+    top: 45%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -152,35 +152,9 @@
   <div class="count-particles">
     <h1>伯乐图</h1>
     <span>面向职场和大学生的专业技能共享平台</span>
-    <br>
-    <p id="getCode"><a href="mailto:caihanyong@bolotu.com">获取邀请码</a></p>
-    <br>
-    <br>
-    <br>
-    <p id="code_dom">
-      <input type="text" placeholder="请输入邀请码" id="code">
-      <button class="codeYes" onclick="code()">确定</button>
-      <br>
-    </p>
-    <p id="download">
-      <a href="http://bolotu.oss-cn-qingdao.aliyuncs.com/android-release-unsigned.apk?Expires=1468223800&OSSAccessKeyId=xhY7wn3nuLuU4iLp&Signature=a4eE/fSwpF7X81pkHQw0I/3k4FQ%3D">
-        <button class="downloadBtn"><span class="icon-android">
-    </span>安卓版下载 <i>Beta</i></button>
-      </a>
-    </p>
   </div>
   <script type="text/javascript" src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script type="text/javascript">
-  function code() {
-    var code = document.getElementById('code').value;
-    if (code === "db73a55ac68a1037") {
-      document.getElementById('code_dom').style.display = 'none';
-      document.getElementById('getCode').style.display = 'none';
-      document.getElementById('download').style.display = 'block';
-    } else {
-      alert("请输入正确的邀请码!")
-    }
-  }
   /* ---- particles.js config ---- */
 
   particlesJS("particles-js", {
